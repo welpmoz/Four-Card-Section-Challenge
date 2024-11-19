@@ -61,6 +61,7 @@ header {
     letter-spacing: 0.1px;
     max-width: 32ch;
     margin: 0 auto;
+    opacity: 0.5;
 }
 
 main {
@@ -120,7 +121,7 @@ main .card:hover {
     }
 
     .title ~ p {
-        width: 55ch;
+        max-width: 55ch;
         margin: 0 auto;
     }
 
