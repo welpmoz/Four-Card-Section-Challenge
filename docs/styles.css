@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #44d3d2;
+    --color2: #ea5454;
+    --color3: #549ef2;
+    --color4: #fcae4a;
+    --color5: #4d4f62;
+    --main-bg: #fafafa;
+    --secondary-bg: white;
+    --my-color: unset;
+    --my-area: unset;
+    --areas: "supervisor"
+        "team-builder"
+        "karma"
+        "calculator";
+    --main-pad: 8.5rem 3.2rem 7.8rem 3.2rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--main-pad);
+    background-color: var(--main-bg);
+    gap: 7.6rem;
+}
+
+header {
+    color: var(--color5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(2.4rem, 1vw + 2rem, 3.6rem);
+    letter-spacing: 0.17px;
+    font-weight: 200;
+}
+
+.title > span {
+    font-weight: 600;
+}
+
+.title ~ p {
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    max-width: 32ch;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+main > .two-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+main .card {
+    padding: 2.7rem 2.8rem 2.8rem 2.8rem;
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    border-top: 0.355rem solid;
+    border-top-color: var(--my-color);
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    max-width: 35rem;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+main .card:hover {
+    transform: scale(1.04);
+}
+
+.card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: var(--color5);
+}
+
+.card p {
+    font-size: 1.3rem;
+    letter-spacing: 0.09px;
+    line-height: 23px;
+    color: var(--color5);
+}
+
+.card > img {
+    width: 5.7rem;
+    align-self: flex-end;
+}
+
+@media (min-width: 58.5rem) {
+    :root {
+        --main-pad: 8rem 3.2rem;
+    }
+
+    .title ~ p {
+        width: 55ch;
+        margin: 0 auto;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main > * {
+        flex: 1 1 30rem;
+        gap: 3rem;
+    }
+
+    main > .two-cards {
+        max-width: 35rem;
+        gap: 3rem;
+    }
+}
