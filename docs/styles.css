@@ -108,6 +108,7 @@ main .card:hover {
     letter-spacing: 0.09px;
     line-height: 23px;
     color: var(--color5);
+    opacity: 0.5;
 }
 
 .card > img {
