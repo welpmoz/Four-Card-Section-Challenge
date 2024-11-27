@@ -21,8 +21,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [GitHub repository](https://github.com/welpmoz/Social-Links-Profile).
-- Live Site URL: [Live site](https://welpmoz.github.io/Social-Links-Profile/)
+- Solution URL: [GitHub repository](https://github.com/welpmoz/Four-Card-Section-Challenge).
+- Live Site URL: [Live site](https://welpmoz.github.io/Four-Card-Section-Challenge/)
 
 ## My process
 
